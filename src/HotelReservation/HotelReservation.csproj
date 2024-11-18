@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="MediatR"/>
+    <PackageReference Include="FluentValidation.AspNetCore"/>
+    <PackageReference Include="Asp.Versioning.Http"/>
+    <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer"/>
+    <PackageReference Include="Swashbuckle.AspNetCore"/>
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations"/>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi"/>
+    <PackageReference Include="Humanizer"/>
+    <PackageReference Include="Scrutor"/>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Shared\Extensions\Swagger\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Shared\Extensions\Swagger\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Shared\Extensions\Swagger\**" />
+  </ItemGroup>
+</Project>
