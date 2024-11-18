@@ -37,7 +37,7 @@ The Stock Analyzer is a console application designed to calculate the maximum pr
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/sathishsuresh04/HotelReservationManagement
+   git clone https://github.com/sathishsuresh04/HotelReservationAndStockAnalysis
    ```
 
 2. Restore the dependencies:
