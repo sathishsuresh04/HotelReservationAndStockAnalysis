@@ -2,7 +2,10 @@
 
 ## Overview
 
-The Hotel Reservation API is a minimalistic RESTful service designed to manage hotel room reservations. It follows the principles of Domain-Driven Design (DDD) and utilizes a Vertical Slice Architecture. The API is built using ASP.NET Core and leverages MediatR for handling commands and queries, Fluent Validation for input validation, and Swagger for API documentation.
+The Hotel Reservation API is a minimalistic RESTful service designed to manage hotel room reservations. It follows the
+principles of Domain-Driven Design (DDD) and utilizes a Vertical Slice Architecture. The API is built using ASP.NET Core
+and CQRS pattern leverages MediatR for handling commands and queries, Fluent Validation for input validation, and Swagger for API
+documentation
 
 ## Features
 
@@ -14,6 +17,7 @@ The Hotel Reservation API is a minimalistic RESTful service designed to manage h
 - MediatR
 - FluentValidation
 - Swagger/OpenAPI
+- NSubstitute
 
 ## Getting Started
 
@@ -44,7 +48,8 @@ The Hotel Reservation API is a minimalistic RESTful service designed to manage h
 
 ### Configuration
 
-The application settings can be found in the `appsettings.json` file. You can configure logging levels, allowed hosts, and OpenAPI information here.
+The application settings can be found in the `appsettings.json` file. You can configure logging levels, allowed hosts,
+and OpenAPI information here.
 
 ### API Endpoints
 
