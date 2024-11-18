@@ -18,12 +18,14 @@ public static class HotelReservationConfigs
         builder.AddInfrastructure();
         return builder;
     }
+
     public static WebApplication UseReservationManagementServices(this WebApplication app)
     {
-         app.UseInfrastructure();
+        app.UseInfrastructure();
         return app;
     }
-    public static IEndpointRouteBuilder MapReservationEndpoints(this IEndpointRouteBuilder endpoints)
+
+    public static IEndpointRouteBuilder MapReservationManagementEndpoints(this IEndpointRouteBuilder endpoints)
     {
         endpoints.MapGet("/", () => "Reservation Service").ExcludeFromDescription();
         endpoints.MapReservationModuleEndpoints();

@@ -10,7 +10,7 @@ public class GlobalExceptionHandler(IHostEnvironment environment)
 {
     public async ValueTask<bool> TryHandleAsync(
         HttpContext httpContext,
-        System.Exception exception,
+        Exception exception,
         CancellationToken cancellationToken
     )
     {
@@ -20,7 +20,9 @@ public class GlobalExceptionHandler(IHostEnvironment environment)
             not
             {
             } problemDetailsService)
+        {
             return true;
+        }
 
         (string Detail, string Title, int StatusCode) details = exception switch
         {

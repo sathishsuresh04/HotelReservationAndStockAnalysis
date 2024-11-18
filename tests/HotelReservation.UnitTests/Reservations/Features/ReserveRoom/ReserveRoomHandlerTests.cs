@@ -1,4 +1,3 @@
-
 using FluentValidation;
 using FluentValidation.Results;
 using HotelReservation.Reservations.Features.ReserveRoom;
@@ -6,6 +5,7 @@ using NSubstitute;
 using ValidationException = HotelReservation.Shared.Exceptions.ValidationException;
 
 namespace HotelReservation.UnitTests.Reservations.Features.ReserveRoom;
+
 public class ReserveRoomHandlerTests
 {
     [Fact]

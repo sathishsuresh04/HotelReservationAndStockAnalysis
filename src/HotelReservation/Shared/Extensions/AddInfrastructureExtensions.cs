@@ -27,18 +27,15 @@ public static class AddInfrastructureExtensions
             .AddCustomValidators(typeof(IHotelReservationRoot).Assembly);
         return builder;
     }
-    
+
     private static IServiceCollection AddCustomMediatR(this IServiceCollection services)
     {
         services.AddMediatR(
-            cfg =>
-            {
-                cfg.RegisterServicesFromAssemblyContaining(typeof(IHotelReservationRoot));
-            });
+            cfg => { cfg.RegisterServicesFromAssemblyContaining(typeof(IHotelReservationRoot)); });
         return services;
     }
-    
-    public static IServiceCollection AddCustomValidators(
+
+    private static IServiceCollection AddCustomValidators(
         this IServiceCollection services,
         Assembly assembly,
         ServiceLifetime serviceLifetime = ServiceLifetime.Transient

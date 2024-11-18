@@ -33,7 +33,7 @@ public static class EndpointConventionBuilderExtensions
 
         return builder;
     }
-    
+
     /// <summary>
     ///     Specifies the summary and description for the endpoint operation.
     /// </summary>
