@@ -3,7 +3,7 @@ using HotelReservation.Shared;
 namespace HotelReservation.Api;
 
 #pragma warning disable RCS1102
-public  class Program
+public class Program
 #pragma warning restore RCS1102
 {
     public static Task Main(string[] args)
@@ -13,7 +13,7 @@ public  class Program
         var app = builder.Build();
 
         app.UseReservationManagementServices();
-        app.MapReservationEndpoints();
+        app.MapReservationManagementEndpoints();
         return app.RunAsync();
     }
 }
